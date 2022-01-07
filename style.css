@@ -1,0 +1,115 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+  --fillBlue: #2196f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height needs to be set to align vertically */
+  height: 100vh;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+h1 {
+  /* margin: 10px 0; */
+  font-weight: 700;
+}
+
+.twoLitres {
+  color: #2196f3;
+}
+
+h3 {
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.cup {
+  background-color: #fff;
+  border: 3px solid #495057;
+  border-radius: 0 0 40px 40px;
+  height: 330px;
+  width: 150px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cup.cup-small {
+  width: 50px;
+  height: 95px;
+  border-radius: 0 0 15px 15px;
+  cursor: pointer;
+  /* padding: 5px; */
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: 0.3s ease;
+  margin: 5px;
+}
+
+.cup.cup-small.full {
+  background-color: var(--fillBlue);
+  color: #fff;
+}
+
+.cups {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  align-items: center;
+  justify-content: center;
+}
+
+.remained {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  transition: 0.3s ease;
+}
+
+.remained span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.remained small {
+  font-size: 0.7rem;
+}
+
+.percentage {
+  background-color: var(--fillBlue);
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  height: 0;
+  transition: 0.3s ease;
+}
+
+.text {
+  text-align: center;
+  margin: 0 0 10px;
+}
